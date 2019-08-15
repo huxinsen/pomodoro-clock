@@ -1,0 +1,13 @@
+.state-btn {
+  width: 100px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #41c5a4;
+  border: none;
+}
+
+.state-btn:hover {
+  cursor: pointer;
+}

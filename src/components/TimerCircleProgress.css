@@ -1,0 +1,12 @@
+.progress {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.progress__stateful-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}

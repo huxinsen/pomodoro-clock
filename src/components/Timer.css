@@ -1,0 +1,35 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.time-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  font-size: 3rem;
+}
+
+.time-left__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.timer-state {
+  font-size: 2.5rem;
+}
+
+@media (max-width:339px) {
+  .timer-state {
+    font-size: 2rem;
+  }
+}
