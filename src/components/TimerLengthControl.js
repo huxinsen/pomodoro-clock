@@ -1,5 +1,4 @@
 import React from 'react'
-import Time from './Time'
 import './TimerLengthControl.css'
 
 function TimerLengthControl (props) {
@@ -8,7 +7,7 @@ function TimerLengthControl (props) {
       <div className="length-label">{props.label}</div>
       <div className="length-buttons">
         <button className="length-btn" onClick={props.onClickDecrease}>&lt;</button>
-        <Time time={props.time} />
+        <span>{Math.floor(props.time / 60)}</span>
         <button className="length-btn" onClick={props.onClickIncrease}>&gt;</button>
       </div>
     </div>
