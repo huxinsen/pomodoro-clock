@@ -31,10 +31,10 @@ class PomodoroClock extends React.Component {
     this.handleClickReset = this.handleClickReset.bind(this)
 
     setInterval(() => {
+      this.setState(tick)
       if (this.state.timeLeft === 0) {
         this.audioBeep.play()
       }
-      this.setState(tick)
     }, 1000)
   }
   handleClickDecreaseWorkTime () {
@@ -54,6 +54,7 @@ class PomodoroClock extends React.Component {
   }
   handleClickReset () {
     this.audioBeep.pause()
+    this.audioBeep.currentTime = 0
     this.setState(reset)
   }
   render () {
